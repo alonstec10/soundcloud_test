@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+var mongoose = require('../db');
 var bcrypt = require('bcrypt');
 var crypto = require('crypto');
 
@@ -8,7 +8,9 @@ var userSchema = new mongoose.Schema({
   username:   { type: String, lowercase: true, unique: true},
   password:   { type: String },
   soundcloud: { type: String },
-  tokens:     { type: Array  }
+  token:     { type: String  },
+  user_id: {type: String},
+  _json : {type: String}
 });
 
 userSchema.pre('save', function(next) {

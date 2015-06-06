@@ -19,10 +19,19 @@
     "express": "^4.11.2",
     "express-session": "^1.10.2",
     "instagram-node": "^0.5.6",
+    "kareem": "^1.0.1",
     "lodash": "^3.2.0",
     "method-override": "^2.3.1",
+    "mongo-client": "^0.2.1",
+    "mongodb-core": "^1.1.33",
     "mongoose": "^3.8.23",
     "passport": "^0.2.1",
-    "passport-soundcloud": "^0.1.2"
+    "passport-soundcloud": "^0.1.2",
+    "request": "^2.57.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "should": "^6.0.3",
+    "supertest": "^1.0.1"
   }
 }

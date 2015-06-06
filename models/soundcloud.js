@@ -5,7 +5,9 @@ var crypto = require('crypto');
 var Schema = mongoose.Schema;
 
 var soundcloudSchema = new mongoose.Schema({
-  user     : [{ type: Schema.Types.ObjectId, ref: 'User' }],
+  user     	: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+  token   	: { type: String },
+  session 	: { type: String }, 
   following: { type: Array },
   favorites: { type: Array }
 });

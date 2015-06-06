@@ -2,8 +2,6 @@
 var _             = require('lodash');
 var async         = require('async');
 var secrets       = require('../config/secrets');
-var SoundCloudAPI = require("soundcloud-node");
-var client        = new SoundCloudAPI(secrets.soundcloud.clientID, secrets.soundcloud.clientSecret, secrets.soundcloud.callbackURL);
 var Soundcloud    = require('../models/soundcloud');
 
 exports.following = function(req, res, next){
